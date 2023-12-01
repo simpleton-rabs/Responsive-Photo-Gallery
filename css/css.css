@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: 'karma';
     border: dotted;
 }
 body {
@@ -7,27 +8,42 @@ body {
 }
 
 h1{
-    font-family: 'karma';
+   
     font-size: 50px;
     line-height: 100px;
+    color: cornflowerblue;
 }
 
 img {
-    width: 50%;
-    height: auto;
+    width: auto;
+    height: 250px;
+}
+
+figcaption{
+    padding-left: 50px;
+    font-size: 20px;
 }
 
 #maincontainer {
     background-color: linen;
     width: 90%;
-    height: 90%;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    margin: auto;
+    /* height: 90%; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #header {
     height: 100px;
     width: 100%;
     text-align: center;
+}
+
+#gallerycontainer{
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; */
+
+    grid-template-rows: max-content max-content max-content max-content;
+    grid-template-columns: max-content max-content max-content max-content;
+    
 }
