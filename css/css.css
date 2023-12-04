@@ -19,9 +19,14 @@ img {
     height: 250px;
 }
 
+figure{
+    width: 500px;
+}
+
 figcaption{
     padding-left: 50px;
     font-size: 20px;
+    /* width: 200; */
 }
 
 #maincontainer {
