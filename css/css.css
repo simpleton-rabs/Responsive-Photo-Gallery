@@ -26,7 +26,7 @@ figure{
 figcaption{
     padding-left: 50px;
     font-size: 20px;
-    /* width: 200; */
+    width: 200px;
 }
 
 #maincontainer {
@@ -44,11 +44,13 @@ figcaption{
 }
 
 #gallerycontainer{
+    width: 100%;
     display: grid;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
 
-    grid-template-rows: max-content max-content max-content max-content;
+    /* grid-template-rows: max-content max-content max-content max-content;
     grid-template-columns: max-content max-content max-content max-content;
-    
+     */
 }
