@@ -1,6 +1,7 @@
 *{
     margin: 0;
     font-family: 'karma';
+    box-sizing: border-box;
     border: dotted;
 }
 body {
@@ -20,13 +21,14 @@ img {
 }
 
 figure{
-    width: 500px;
+    /* width: 500px; */
 }
 
 figcaption{
     padding-left: 50px;
     font-size: 20px;
-    width: 200px;
+    width: auto;
+    /* width: 200px; */
 }
 
 #maincontainer {
@@ -45,9 +47,11 @@ figcaption{
 
 #gallerycontainer{
     width: 100%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
     gap: 5px;
 
     /* grid-template-rows: max-content max-content max-content max-content;
