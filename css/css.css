@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0px;
     font-family: 'karma', Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
     /* border: dotted; */
 }
+
 body {
     background-color: black;
     /* to make main container look like page in photo album */
@@ -11,31 +12,43 @@ body {
     padding-bottom: 4rem;
 }
 
-h1{
-    font-size: 3rem;
+h1 {
+    font-size: 4rem;
     color: cornflowerblue;
+}
+
+picture{
+    /* max-width: 100%;
+    max-height: 100%; */
 }
 
 img {
     /* actual images sized so that all are same height but different orientations */
+    /* width 100%; */
     max-width: 100%;
+    /* max-height: 100%; */
+    /*max-width: auto; */
     border-radius: 25px;
-    box-shadow: 5px 5px 10px; 
-   
+    box-shadow: 5px 5px 10px;
+    /* object-fit: cover; */
 }
 
-figure{
+figure {
+    /* align picture and text in centre */
     text-align: center;
+    /* vertical-align: top; */
+    max-width: 100%;
 }
 
-figcaption{
-    font-size: 1.25rem;
-    width: auto;
-    
+figcaption {
+    font-size: 2rem;
+    /* width: auto; */
+    /* max-width: 100%; */
 }
 
 #maincontainer {
     background-color: linen;
+    /* to make main container look like page in photo album */
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -44,21 +57,74 @@ figcaption{
 }
 
 #header {
-    height: 100px;
-    width: auto;
+    /* height: 5rem; */
+    /* width: auto; */
     text-align: center;
 }
 
-#gallerycontainer{
+#gallerycontainer {
     width: 100%;
     display: grid;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
-    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;    
+}
 
-    /* grid-template-rows: max-content max-content max-content max-content;
-    grid-template-columns: max-content max-content max-content max-content;
-     */
+/* layout for laptops */
+@media (max-width:1200px){
+    h1{
+        font-size: 3.5rem;
+    }
+    figcaption{
+        font-size: 1.75rem;
+    /* }
+    img{
+        max-width: 75%;
+    } */
+}
+
+/* layout for landscape tablet changes grid to two columns */
+@media (max-width:992px){
+    #gallerycontainer {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    figcaption{
+        font-size: 1.5rem;
+    }
+    img{
+        max-width: 75%;
+    }
+}
+
+/* layout for portrait tablet large mobiles keeps grid two columns and HTML picture element changes to square pics */
+@media (max-width:768px){
+    #gallerycontainer {
+        grid-template-columns: repeat(2, 1fr);  
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    figcaption{
+        font-size: 1.25rem;
+    }
+}
+/* layout for mobile changes grid to one column and uses square pics */
+@media (max-width:500px){
+    #gallerycontainer {
+        grid-template-columns: repeat(1, 1fr);  
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    figcaption{
+        font-size: 1rem;
+    }
 }
