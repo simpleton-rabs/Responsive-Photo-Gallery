@@ -2,7 +2,7 @@
     margin: 0px;
     font-family: 'karma', Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
-    /* border: dotted; */
+    border: dotted;
 }
 
 body {
@@ -24,7 +24,7 @@ picture{
 
 img {
     /* actual images sized so that all are same height but different orientations */
-    width 100%;
+    max-width: 100%;
     /* max-width: 400px; */
     /* max-height: 300px; */
     /*max-width: auto; */
@@ -66,6 +66,7 @@ figcaption {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 20px;    
 }
 
