@@ -12,16 +12,13 @@ body {
     padding-bottom: 4rem; */
     padding-top: 5vh;
     padding-bottom: 5vh;
+
 }
 
 h1 {
     /* font-size: 4rem; */
     font-size: 5vw;
     color: cornflowerblue;
-}
-
-#pic_{
-    text-align: center;
 }
 
 picture{
@@ -31,10 +28,15 @@ picture{
 
 img {
     /* actual images sized so that all are same height but different orientations */
-    /* max-width: 100%; */
+    max-width: 100%;
+    /* max-height: 100%; */
     /* max-width: 400px; */
     /* max-height: 300px; */
     /*max-width: auto; */
+    /* height: 300px; */
+    /* width: auto;
+    height: auto;
+    object-fit: cover; */
     border-radius: 25px;
     box-shadow: 5px 5px 10px;
     /* object-fit: cover; */
@@ -50,10 +52,17 @@ figure {
     /* object-fit: cover; */
 }
 
-figcaption {
+p {
     font-size: 2vw;
     /* width: auto; */
     /* max-width: 100%; */
+}
+
+
+
+.pics{
+    text-align: center;
+    /* padding: 15px; */
 }
 
 #maincontainer {
@@ -75,9 +84,13 @@ figcaption {
 #gallerycontainer {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(4, 1fr);
-    /* grid-template-columns: repeat(4, minmax(200px, 1fr)); */
+    
+     /* grid-template-columns: repeat(4, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, minmax(400px, 1fr)); */
+    /* grid-template-columns: repeat(4, minmax(1fr, 300px));
+    grid-template-columns: repeat(4, minmax(1fr, 400px)); */
     gap: 20px;    
 
     /* display: flex;
